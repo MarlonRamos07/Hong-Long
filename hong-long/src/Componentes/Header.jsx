@@ -5,7 +5,7 @@ import BurguerMenu from '../assets/burguer__menu.svg'
 function Header(){
     return(
       
-        <header className=' flex items-center justify-between md:px-80  px-9'>
+        <header className=' flex items-center justify-between md:px-44  px-9'>
             <img className='h-[8.625rem] md:h-[15.75rem]'src={WhiteLogo} alt="Logo Branco"/>
             <nav>
                 <ul className='hidden md:flex gap-10 font-["Sawarabi Gothic"] text-white text-[1.438rem]' >
