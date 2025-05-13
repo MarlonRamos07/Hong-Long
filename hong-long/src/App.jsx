@@ -1,12 +1,14 @@
 import './App.css'
 import Header from './Componentes/Header'
+import Hero from './Componentes/Hero'
 
 function App() {
   
 
   return (
     <>
-       <Header/>
+      <Header/>
+      <Hero/>
     </>
   )
 }
