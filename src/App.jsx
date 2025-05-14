@@ -1,9 +1,10 @@
 import './App.css'
-import Testimonials from './Componentes/Testimonials'
-import About from './Componentes/About'
 import Header from './Componentes/Header'
 import Hero from './Componentes/Hero'
+import About from './Componentes/About'
 import Menu from './Componentes/Menu'
+import Testimonials from './Componentes/Testimonials'
+import Location from './Componentes/Location'
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
     <About/>
     <Menu/>
     <Testimonials/>
+    <Location/>
     </>
   )
 }
