@@ -5,6 +5,7 @@ import About from './Componentes/About'
 import Menu from './Componentes/Menu'
 import Testimonials from './Componentes/Testimonials'
 import Location from './Componentes/Location'
+import DeliveryCall from './Componentes/DeliveryCall'
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
     <Menu/>
     <Testimonials/>
     <Location/>
+    <DeliveryCall/>
     </>
   )
 }
