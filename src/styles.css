@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sawarabi+Gothic&display=swap');
+#menu{
+    color: white !important;
+    background-color: none !important;
+}
+
+#menu:hover{
+    background-color: white !important;
+    color: red !important;
+    border: none !important;
+}
+
+#menu:focus{
+    outline:none;
+    box-shadow:none;
+    border:none;
+}
