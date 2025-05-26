@@ -2,7 +2,7 @@ import Yakissoba from '../assets/Hero_Image 1.svg'
 function Hero () {
     return(
         <>
-          <section className='flex flex-col-reverse md:flex-row items-center justify-center gap-6 md:gap-24 px-4 py-8 md:px-48'>
+          <section id="home" className='flex flex-col-reverse md:flex-row items-center justify-center gap-6 md:gap-24 px-4 py-8 md:px-48'>
             <div className='flex flex-col items-center md:items-start text-center md:text-left gap-4'>
                 <h1 className='font-[Montserrat] font-bold text-white text-[1.75rem] md:text-[2.813rem] md:w-[32.563rem]'>
                     Sabores Autênticos. <br className="hidden md:inline" />

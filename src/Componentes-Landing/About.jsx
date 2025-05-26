@@ -2,7 +2,7 @@ import CheffImage from '../assets/Chef_Image.svg'
 function About() {
     return(
         
-        <section className='flex flex-col   md:flex-row md:text-left md:justify-center text-center md:gap-16 mt-8'>
+        <section id="about" className='flex flex-col   md:flex-row md:text-left md:justify-center text-center md:gap-16 mt-8'>
         <div className='flex flex-col md:text-left md:items-start  justify-center items-center gap-6p'>
             <h2 className='w-[34.188rem] h-[3.625rem] md:w-[36.125rem] md:h-[3.438rem] text-white font-[Montserrat] font-bold text-[1.5rem] md:text-[2.813rem] text-center'>A alma por trás 
             do sabor</h2>

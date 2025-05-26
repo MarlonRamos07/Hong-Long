@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sawarabi+Gothic&display=swap');
 @import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../../.flowbite-react/class-list.json";
 
 :root{
     background-color: #A62C2C;
     margin:0;
     padding:0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
