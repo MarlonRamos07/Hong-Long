@@ -12,7 +12,7 @@ function Menu (){
     return (
 
 
-       <section className='flex flex-col gap-10'>
+       <section id="pratos" className='flex flex-col gap-10'>
         <div className='text-center mt-8 flex flex-col gap-4 px-4'>
             <h2 className='mx-auto text-white font-[Montserrat] text-[1.5rem] font-bold w-[20.188rem] h-[1.813rem] md:text-[2.813rem] md:w-[37.938rem] md:h-[3.438rem]  '>Sabores que conquistam</h2>
             <h6 className='md:text-[1.625rem] md:w-[53.563rem] md:-[2.375rem] text-center mx-auto font-[Sawarabi Gothic] text-white  h-[2.625rem] text-[1.2rem]'>Explore nossos pratos mais pedidos e que encantam nossos clientes!</h6>

@@ -1,25 +1,37 @@
-import WhiteLogo from '../assets/White_Logo.svg'
-import BurguerMenu from '../assets/burguer__menu.svg'
+import { Navbar, NavbarBrand, NavbarCollapse, NavbarToggle } from "flowbite-react";
+import Logo from '../assets/White_Logo_Mobile (2).svg'
+import '../styles.css'
 
 
-function Header(){
-    return(
-      
-        <header className=' flex items-center justify-between md:px-44  px-9'>
-            <img className='h-[8.625rem] md:h-[15.75rem]'src={WhiteLogo} alt="Logo Branco"/>
-            <nav>
-                <ul className='hidden md:flex gap-10 font-["Sawarabi Gothic"] text-white text-[1.438rem]' >
-                  <li className='hover:text-black'><a href="">Home</a></li>
-                  <li className='hover:text-black'><a href="">Pratos</a></li>
-                  <li className='hover:text-black'><a href="">Sobre nós</a></li>
-                  <li className='hover:text-black'><a href="">Contato</a></li>
-                </ul>                
-            </nav>
-            <button className='md:hidden'>
-                <img className='md:hidden' src={BurguerMenu} alt=""/>
-            </button>
-        </header>
-    )
+function Header() {
+  return (
+    <header className="w-full ">
+    <Navbar  rounded className="bg-[#A62C2C] dark:bg-[#A62C2C] flex justify-between items-center gap-x-4 ">
+      <NavbarBrand href="#" className="">
+        <img src={Logo} className="w-[9rem] md:w-[15.75rem] md:h-[15.75rem]"/>
+      </NavbarBrand>
+      <NavbarToggle id="menu" />
+        
+      <NavbarCollapse className="text-center font-['Sawarabi_Gothic'] text-2xl   ">
+        <a href="#home" className="text-white dark:text-white mb-2.5 hover:text-[black] md:text-[1.438rem] ">
+          Home
+        </a>
+        <a href="#pratos" className="text-white dark:text-white mb-2.5 hover:text-[black] md:text-[1.438rem]">
+          Pratos
+        </a>
+        <a href="#about" className="text-white dark:text-white mb-2.5 hover:text-[black] md:text-[1.438rem]">
+          Sobre nós
+        </a>
+        <a href="#location" className="text-white dark:text-white mb-2.5 hover:text-[black]  md:text-[1.438rem]">
+          Localização
+        </a>
+        <a href="#delivery" className="text-white dark:text-white mb-2.5 hover:text-[black]  md:text-[1.438rem]">
+          Baixe o Delivery!
+        </a>
+      </NavbarCollapse>
+    </Navbar>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
