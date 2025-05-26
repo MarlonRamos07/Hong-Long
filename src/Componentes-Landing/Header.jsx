@@ -25,7 +25,7 @@ function Header() {
         <a href="#location" className="text-white dark:text-white mb-2.5 hover:text-[black]  md:text-[1.438rem]">
           Localização
         </a>
-        <a href="#delivery" className="text-white dark:text-white mb-2.5 hover:text-[black]  md:text-[1.438rem]">
+        <a href="#delivery" className="text-white dark:text-white mb-2.5 hover:text-[black] md:hidden md:text-[1.438rem]">
           Baixe o Delivery!
         </a>
       </NavbarCollapse>
