@@ -2,7 +2,7 @@ import Moto from '../assets/moto_image.svg'
 
 function DeliveryCall(){
     return(
-        <section className='md:mt-44 mt-24'>
+        <section className='md:mt-44 mt-24 pb-10'>
             <div className='flex flex-col gap-[1.313rem] md:gap-14 items-center md:text-center'>
                 <h2 className='md:w-[58.125rem] md:h-[9.75rem] md:text-[4rem] text-center w-[22.25rem] h-[3.625rem] text-white font-bold font-[Montserrat] text-2xl '>E... que tal saborear de onde quiser?</h2>
                 <h6 className='md:w-[59.313rem] md:h-[3.438rem] md:text-[2.813rem] text-white font-semibold font-[Montserrat] w-[19.438rem] h-[1.188rem] '>Sim? Então a gente entrega até você!</h6>
