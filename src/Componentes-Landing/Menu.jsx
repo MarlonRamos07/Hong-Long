@@ -1,6 +1,6 @@
 import emojiNoodles from '../assets/emoji_noodles.svg'
 import emojiDragon from '../assets/emoji_dragon.png'
-import Card from '../Componentes/CardPrato'
+import Card from '../Componentes-Landing/CardPrato'
 import prato1 from '../assets/prato1_card.png'
 import prato2 from '../assets/prato2_card.png'
 import prato3 from '../assets/prato3_card.png'
