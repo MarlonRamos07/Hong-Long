@@ -12,13 +12,7 @@ function App() {
 
   return (
     <>
-    <Header/>
-    <Hero/>
-    <About/>
-    <Menu/>
     <Testimonials/>
-    <Location/>
-    <DeliveryCall/>
     </>
   )
 }
