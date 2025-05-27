@@ -67,14 +67,6 @@ function Carrossel() {
           dragConstraints={{ right: 0, left: -width }}
           dragElastic={1.1}
           dragTransition={{ bounceStiffness: 100, bounceDamping: 20 }}
-          onDragEnd={(event, info) =>{
-            if(info.velocity.x < -500){
-              controls.start({x: -width, transition: {type: "spring", stiffness: 300}})
-            } else if (info.velocity.x > 500){
-              controls.start({x:0, transition: {type: "spring", stiffness: 300}})
-            }
-          }}
-          animate={controls}
         >
           {cardData.map((data, index) => (
             <motion.div
