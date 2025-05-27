@@ -65,7 +65,7 @@ function Carrossel() {
           className="inner flex md:flex-row items-center justify-center"
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
-          dragElastic={0.1}
+          dragElastic={10}
           dragTransition={{ bounceStiffness: 100, bounceDamping: 20 }}
           onDragEnd={(event, info) =>{
             if(info.velocity.x < -500){
