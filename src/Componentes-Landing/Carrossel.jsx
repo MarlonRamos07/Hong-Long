@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { motion } from 'framer-motion'
+import { motion, useAnimation } from 'framer-motion'
 import CardPessoa from './CardPessoa'
 import CardMan from '../assets/Card_Man.svg'
 import CardWomen from '../assets/Card_Women.svg'
@@ -22,7 +22,9 @@ const cardData = [
     }
 ]
 
+
 function Carrossel() {
+  const controls = useAnimation();
   const carrossel = useRef<HTMLDivElement>(null)
   const [width, setWidth] = useState(0)
 
@@ -63,6 +65,16 @@ function Carrossel() {
           className="inner flex md:flex-row items-center justify-center"
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
+          dragElastic={0.1}
+          dragTransition={{ bounceStiffness: 100, bounceDamping: 20 }}
+          onDragEnd={(event, info) =>{
+            if(info.velocity.x < -500){
+              controls.start({x: -width, transition: {type: "spring", stiffness: 300}})
+            } else if (info.velocity.x > 500){
+              controls.start({x:0, transition: {type: "spring", stiffness: 300}})
+            }
+          }}
+          animate={controls}
         >
           {cardData.map((data, index) => (
             <motion.div
