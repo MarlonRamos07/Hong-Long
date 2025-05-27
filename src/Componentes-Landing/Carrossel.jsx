@@ -43,7 +43,7 @@ function Carrossel() {
         >
           {cardData.map((data, index) => (
             <motion.div
-              className='p-10 min-w-[20.063rem] min-h-[26.125rem]'
+              className='p-10 md:min-w-[20.063rem] md:min-h-[26.125rem]'
               key={index}
             >
               <CardPessoa
@@ -66,7 +66,7 @@ function Carrossel() {
         >
           {cardData.map((data, index) => (
             <motion.div
-              className='p-10 min-w-[20.063rem] min-h-[26.125rem]'
+              className='p-10 min-w-[19.063rem] min-h-[15.125rem]'
               key={index}
             >
               <CardPessoa
