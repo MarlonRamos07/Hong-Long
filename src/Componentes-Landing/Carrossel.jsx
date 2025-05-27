@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { motion, useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 import CardPessoa from './CardPessoa'
 import CardMan from '../assets/Card_Man.svg'
 import CardWomen from '../assets/Card_Women.svg'
@@ -24,7 +24,6 @@ const cardData = [
 
 
 function Carrossel() {
-  const controls = useAnimation();
   const carrossel = useRef<HTMLDivElement>(null)
   const [width, setWidth] = useState(0)
 
